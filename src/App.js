@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import video from './assets/water.mp4';
+import poster from './assets/water.png'
 
 function App() {
   const [isActive, setActive] = useState('false');
@@ -12,7 +13,7 @@ function App() {
     <div className="App">
       <div className="videoContainer">
         <div className="videoBackground">
-          <video autoPlay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+          <video autoPlay loop muted poster={poster}>
             <source src={video} type="video/mp4" />
           </video>
           <div className="textOverlay">
