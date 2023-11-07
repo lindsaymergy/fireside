@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/fireside/static/css/main.997a9be8.css",
+    "main.js": "/fireside/static/js/main.7d7bfbbf.js",
+    "static/js/787.a6e75ec8.chunk.js": "/fireside/static/js/787.a6e75ec8.chunk.js",
+    "index.html": "/fireside/index.html",
+    "main.997a9be8.css.map": "/fireside/static/css/main.997a9be8.css.map",
+    "main.7d7bfbbf.js.map": "/fireside/static/js/main.7d7bfbbf.js.map",
+    "787.a6e75ec8.chunk.js.map": "/fireside/static/js/787.a6e75ec8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.997a9be8.css",
+    "static/js/main.7d7bfbbf.js"
+  ]
+}
