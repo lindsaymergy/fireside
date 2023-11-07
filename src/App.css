@@ -103,6 +103,19 @@ video {
   animation: fadeIn 5s;
 }
 
+.logo {
+  position: absolute;
+  margin: 10px 0 0 10px;
+  transition: margin .5s ease;
+}
+
+.logo > img {
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  transition: all .5s ease;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -128,12 +141,31 @@ video {
   }
 }
 
+@media (min-width: 600px) {
+  .logo {
+    margin: 20px 0 0 20px;
+  }
+
+  .logo>img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
 @media (min-width: 768px) {
   .textOverlay {
     height: 99.25%;
   }
   .textOverlay h2 {
     font-size: 48px;
+  }
+  .logo {
+    margin: 20px 0 0 20px;
+  }
+
+  .logo>img {
+    width: 80px;
+    height: 80px;
   }
 }
 

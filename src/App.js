@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import './App.css';
 import video from './assets/water.mp4';
-import poster from './assets/water.png'
+import poster from './assets/water.png';
+import logo from './assets/logo.png';
 
 function App() {
   const [isActive, setActive] = useState('false');
@@ -17,6 +18,9 @@ function App() {
             <source src={video} type="video/mp4" />
           </video>
           <div className="textOverlay">
+            <div className='logo'>
+              <img alt="fireside lodging logo" src={logo} />
+            </div>
           <div className="icon">
               <>
                 <svg className={`ham hamRotate ham8 ${isActive ? "active" : ""}`} viewBox="0 0 100 100" width="80" onClick={toggleActive}>
