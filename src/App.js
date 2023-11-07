@@ -24,8 +24,10 @@ function App() {
                   <path className="line bottom" d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
                 </svg>
               </>
-          </div>
-            <h2>Discover Tranquility</h2>
+            </div>
+            <div className='fade-in-text'>
+            <h2 >Discover Tranquility</h2>
+            </div>
           </div>
         </div>
       </div>

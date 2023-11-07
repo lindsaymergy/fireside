@@ -26,9 +26,10 @@ video {
 }
 
 .textOverlay h2 {
-  font-size: 34px;
+  font-size: 24px;
   color: #fff;
   margin-top: 20%;
+  transition: font-size .5s ease;
 }
 
 .content {
@@ -43,13 +44,6 @@ video {
 .green {
   background-color: lightgreen;
 }
-
-/* .icon {
-  background-color: red;
-  position: absolute;
-  top: 0;
-  left: 0;
-} */
 
 .icon {
   height: 100%;
@@ -75,7 +69,7 @@ video {
   transform: rotate(180deg);
 }
 .line {
-fill:none;
+  fill:none;
   transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
   stroke:#FFFFFF;
   stroke-width:3;
@@ -105,7 +99,19 @@ fill:none;
   stroke-dashoffset: -64px;
 }
 
+.fade-in-text {
+  animation: fadeIn 5s;
+}
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
 
 @media (min-width: 375px) {
   .textOverlay {
@@ -117,17 +123,26 @@ fill:none;
   .textOverlay {
     height: 99%;
   }
+  .textOverlay h2 {
+    font-size: 36px;
+  }
 }
 
 @media (min-width: 768px) {
   .textOverlay {
     height: 99.25%;
   }
+  .textOverlay h2 {
+    font-size: 48px;
+  }
 }
 
 @media (min-width: 1024px) {
   .textOverlay {
     height: 99.5%;
+  }
+  .textOverlay h2 {
+    font-size: 56px;
   }
 }
 
