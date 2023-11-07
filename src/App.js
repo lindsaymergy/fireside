@@ -1,20 +1,30 @@
+import { useState } from 'react';
 import './App.css';
+import video from './assets/water.mp4';
 
 function App() {
+  const [isActive, setActive] = useState('false');
+  const toggleActive = () => {
+    setActive(!isActive);
+  };
+
   return (
     <div className="App">
       <div className="videoContainer">
         <div className="videoBackground">
-          <iframe
-            title="YouTube Video"
-            width="100%"
-            height="90%" /* Adjust height to cut off the top 10% of the video */
-            src="https://www.youtube.com/embed/hQItqD6ERLM?autoplay=1&controls=0&mute=1&loop=1"
-            frameBorder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          />
+          <video autoPlay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+            <source src={video} type="video/mp4" />
+          </video>
           <div className="textOverlay">
+          <div className="icon">
+              <>
+                <svg className={`ham hamRotate ham8 ${isActive ? "active" : ""}`} viewBox="0 0 100 100" width="80" onClick={toggleActive}>
+                  <path className="line top" d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+                  <path className="line middle" d="m 30,50 h 40" />
+                  <path className="line bottom" d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+                </svg>
+              </>
+          </div>
             <h2>Discover Tranquility</h2>
           </div>
         </div>
